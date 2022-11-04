@@ -1,5 +1,5 @@
 # 项目介绍
-学习和实践 c/c++的测试平台(远程仓库)
+学习和实践 c/c++的项目模板
 
 配置了makefile在windows下vscode的编译连接和运行(需要mingw64)
 ### 项目运行
@@ -15,49 +15,6 @@
 - **编译器**
 
   gcc/g++
-
-
-# 目录结构
-```
-C-Plus-Plus
-├─ .vscode
-│  ├─ c_cpp_properties.json
-│  ├─ launch.json
-│  ├─ settings.json
-│  └─ tasks.json
-├─ include
-│  ├─ HeaderFile.hpp
-│  ├─ MyArray.hpp
-│  ├─ MySort.hpp
-│  ├─ sort-BubbleSort.hpp
-│  ├─ sort-InsertionSort.hpp
-│  ├─ sort-SelectionSort.hpp
-│  └─ sort-ShellSort.hpp
-├─ lib
-├─ Makefile
-├─ out
-├─ README.md
-├─ src
-│  └─ main.cpp
-└─ test
-   ├─ include
-   │  └─ test.hpp
-   ├─ lib
-   └─ src
-      └─ test.cpp
-
-```
-# 版本内容更新
-###### v1.0.0: 
-    1.实现冒泡排序(BubbleSort)
-    2.实现选择排序(SelectionSort)
-    3.添加插入排序(InsertionSort) **未实现**
-    4.添加希尔排序(ShellSort) **未实现**
-###### v2.0.0:
-    1.添加test文件夹
-    2.更改Makefile文件(**注意:未实现test文件的运行和调试**)    
-    3.使用Code Runner插件快速编译并运行
-  [本项目配置文件](#code-runner插件配置):[官方配置说明](https://github.com/formulahendry/vscode-code-runner)
 
 # vscode插件推荐
 ## 功能类
