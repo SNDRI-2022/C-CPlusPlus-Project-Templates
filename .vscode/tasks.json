@@ -4,15 +4,12 @@
         {
             "label": "build",
             "type": "shell",
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
+            "group": "build",
             "windows": {
                 "command": "powershell",
                 "args": [
                     "-c",
-                    "mingw32-make"
+                    "mingw32-make",
                 ]
             },
             "linux": {
@@ -28,7 +25,8 @@
                     "-c",
                     "make"
                 ]
-            }
+            },
+            "problemMatcher": []
         },
         {
             "label": "build & run",
@@ -53,6 +51,11 @@
                     "-c",
                     "'make run'"
                 ]
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         },
         {
@@ -78,7 +81,8 @@
                     "-c",
                     "'make clean'"
                 ]
-            }
+            },
+            "problemMatcher": []
         }
     ]
 }

@@ -1,41 +1,78 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug",
-            "type": "cppdbg",
-            "request": "launch",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": false,
-            "program": "${workspaceFolder}/output/main",
-            "linux": {
-                "name": "DebugLinux",
-                "request": "launch",
-                "type": "cppdbg",
-                "MIMode": "gdb",
-                "miDebuggerPath": "gdb",
-                "program": "${workspaceFolder}/output/main"
-            },
-            "osx": {
-                "name": "DebugMac",
-                "request": "launch",
-                "type": "cppdbg",
-                "MIMode": "lldb",
-                "miDebuggerPath": "lldb-mi",
-                "program": "${workspaceFolder}/output/main"
-            },
-            "windows": {
-                "name": "DebugWindows",
-                "request": "launch",
-                "type": "cppdbg",
-                "MIMode": "gdb",
-                "miDebuggerPath": "gdb.exe",
-                "program": "${workspaceFolder}/output/main.exe"
-            },
-            "preLaunchTask": "build"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "program": "${workspaceFolder}/out/main",
+      "linux": {
+        "name": "Debug",
+        "request": "launch",
+        "type": "cppdbg",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "program": "${workspaceFolder}/out/main"
+      },
+      "osx": {
+        "name": "Debug",
+        "request": "launch",
+        "type": "cppdbg",
+        "MIMode": "lldb",
+        "miDebuggerPath": "lldb-mi",
+        "program": "${workspaceFolder}/out/main"
+      },
+      "windows": {
+        "name": "Debug",
+        "request": "launch",
+        "type": "cppdbg",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb.exe",
+        "program": "${workspaceFolder}/out/main.exe"
+      },
+      "preLaunchTask": "build"
+    },
+    //     //test
+    //     {
+    //       "name": "Debug-Test",
+    //       "type": "cppdbg",
+    //       "request": "launch",
+    //       "args": [],
+    //       "stopAtEntry": false,
+    //       "cwd": "${workspaceFolder}",
+    //       "environment": [],
+    //       "externalConsole": false,
+    //       "program": "${workspaceFolder}/out/test",
+    //       "linux": {
+    //         "name": "Debug-Test",
+    //         "request": "launch",
+    //         "type": "cppdbg",
+    //         "MIMode": "gdb",
+    //         "miDebuggerPath": "gdb",
+    //         "program": "${workspaceFolder}/out/test"
+    //       },
+    //       "osx": {
+    //         "name": "Debug-Test",
+    //         "request": "launch",
+    //         "type": "cppdbg",
+    //         "MIMode": "lldb",
+    //         "miDebuggerPath": "lldb-mi",
+    //         "program": "${workspaceFolder}/out/test"
+    //       },
+    //       "windows": {
+    //         "name": "Debug-Test",
+    //         "request": "launch",
+    //         "type": "cppdbg",
+    //         "MIMode": "gdb",
+    //         "miDebuggerPath": "gdb.exe",
+    //         "program": "${workspaceFolder}/out/test.exe"
+    //       },
+    //       "preLaunchTask": "build"
+    //     },
+  ]
 }

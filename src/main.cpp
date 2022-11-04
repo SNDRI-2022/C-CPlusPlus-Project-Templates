@@ -1,14 +1,8 @@
-/********************************************************************************
- * @file main.cpp
- * @author lxy (2305195328@qq.com)
- * @brief
- * @version 1.0.0
- * @date 2022-10-27
- ********************************************************************************/
 #include <iostream>
+using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
-	std::cout << "TEST" << std::endl;
+
 	return 0;
 }
