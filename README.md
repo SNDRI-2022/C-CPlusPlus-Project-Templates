@@ -1,7 +1,7 @@
 # 项目介绍
 学习和实践 c/c++的项目模板
-
-配置了makefile在windows下vscode的编译连接和运行(需要mingw64)
+从[C/C++ Project Generator](https://github.com/danielpinto8zz6/c-cpp-project-generator#readme):从些插件生成c/c++项目目录中自定义自己功能
+windows下vscode的编译连接和运行(需要mingw64)
 ### 项目运行
 
 - **代码环境**
@@ -17,7 +17,13 @@
   gcc/g++
 # 版本内容更新
 ###### v1.0.0: 
-    *1.makefile未实现test文件的调试*
+    1.添加基本项目目录文件
+    2.修改makefile文件
+###### v2.0.0.0
+    1.添加test文件
+    2.添加code-runner对此目录的编译和运行
+    *注意:*makefile文件未对test目录配置    
+  [code-runner配置说明](#code-runner插件配置)
     
 # vscode插件推荐
 ## 功能类
