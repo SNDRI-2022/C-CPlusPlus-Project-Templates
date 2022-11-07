@@ -15,7 +15,10 @@
 - **编译器**
 
   gcc/g++
-
+# 版本内容更新
+###### v1.0.0: 
+    *1.makefile未实现test文件的调试*
+    
 # vscode插件推荐
 ## 功能类
 - [一键编译运行多种语言](https://github.com/formulahendry/vscode-code-runner):[本项目配置文件](#code-runner插件配置)

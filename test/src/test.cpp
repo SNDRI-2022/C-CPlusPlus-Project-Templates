@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
-    std::cout << "maintest" << std::endl;
+    testfunc();
+    std::cout << "testcpp" << std::endl;
     return 0;
 }
