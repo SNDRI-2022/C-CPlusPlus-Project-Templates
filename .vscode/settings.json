@@ -1,10 +1,27 @@
+//!vscode插件设置
 {
-  "code-runner.defaultLanguage": "cpp",
+  // "code-runner.defaultLanguage": "cpp",
+  // "code-runner.saveFileBeforeRun": true,
+  // "code-runner.clearPreviousOutput": true,
+  // "code-runner.customCommand": "cd $workspaceRoot && del /q /f .\\out\\$fileNameWithoutExt.exe && echo Cleanup complete!",
+  // "code-runner.executorMap": {
+  //   "c": "cd $workspaceRoot && gcc -g $fullFileName -I $workspaceRoot\\include -I $workspaceRoot\\test\\include -o $workspaceRoot\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
+  //   "cpp": "cd $workspaceRoot && g++ -g $fullFileName -I $workspaceRoot\\include -I $workspaceRoot\\test\\include -o $workspaceRoot\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe"
+  // },
+  ////运行时自动保存全部文件
+  ////"code-runner.saveAllFilesBeforeRun": true,
+  //自动清除输出
+  "code-runner.clearPreviousOutput": true,
+  //默认运行语言
+  //"code-runner.defaultLanguage": "cpp",
+  //运行插件时保存当前文件
   "code-runner.saveFileBeforeRun": true,
-  "code-runner.customCommand": "cd $workspaceRoot && del /q /f .\\out\\*.exe && echo Cleanup complete!",
+  //ctrl+alt+k运行自定义命令(这里是清除生成文件)
+  "code-runner.customCommand": "cd $workspaceRoot && del /q /f .\\out\\$fileNameWithoutExt.exe && echo Cleanup complete!",
+  //自定义语言运行命令
   "code-runner.executorMap": {
-    "c": "cd $workspaceRoot && gcc -g $fullFileName -I $workspaceRoot\\include -I $workspaceRoot\\test\\include -o$workspaceRoot\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
-    "cpp": "cd $workspaceRoot && g++ -g $fullFileName -I $workspaceRoot\\include -I $workspaceRoot\\test\\include -o$workspaceRoot\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe"
+    "c": "cd $workspaceRoot && gcc -g $fullFileName: -I .\\include -I .\\test\\include -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
+    "cpp": "cd $workspaceRoot && g++ -g $fullFileName -I .\\include -I .\\test\\include -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
   },
   "files.associations": {
     "vector": "cpp",

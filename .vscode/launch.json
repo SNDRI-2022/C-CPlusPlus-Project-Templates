@@ -1,3 +1,4 @@
+//!调试器设置
 {
   "version": "0.2.0",
   "configurations": [
@@ -37,42 +38,42 @@
       },
       "preLaunchTask": "build"
     },
-    //     //test
-    //     {
-    //       "name": "Debug-Test",
-    //       "type": "cppdbg",
-    //       "request": "launch",
-    //       "args": [],
-    //       "stopAtEntry": false,
-    //       "cwd": "${workspaceFolder}",
-    //       "environment": [],
-    //       "externalConsole": false,
-    //       "program": "${workspaceFolder}/out/test",
-    //       "linux": {
-    //         "name": "Debug-Test",
-    //         "request": "launch",
-    //         "type": "cppdbg",
-    //         "MIMode": "gdb",
-    //         "miDebuggerPath": "gdb",
-    //         "program": "${workspaceFolder}/out/test"
-    //       },
-    //       "osx": {
-    //         "name": "Debug-Test",
-    //         "request": "launch",
-    //         "type": "cppdbg",
-    //         "MIMode": "lldb",
-    //         "miDebuggerPath": "lldb-mi",
-    //         "program": "${workspaceFolder}/out/test"
-    //       },
-    //       "windows": {
-    //         "name": "Debug-Test",
-    //         "request": "launch",
-    //         "type": "cppdbg",
-    //         "MIMode": "gdb",
-    //         "miDebuggerPath": "gdb.exe",
-    //         "program": "${workspaceFolder}/out/test.exe"
-    //       },
-    //       "preLaunchTask": "build"
-    //     },
+    //test
+    {
+      "name": "Test-Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "program": "${workspaceFolder}/out/test",
+      "linux": {
+        "name": "Test-Debug",
+        "request": "launch",
+        "type": "cppdbg",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb",
+        "program": "${workspaceFolder}/out/test"
+      },
+      "osx": {
+        "name": "Test-Debug",
+        "request": "launch",
+        "type": "cppdbg",
+        "MIMode": "lldb",
+        "miDebuggerPath": "lldb-mi",
+        "program": "${workspaceFolder}/out/test"
+      },
+      "windows": {
+        "name": "Test-Debug",
+        "request": "launch",
+        "type": "cppdbg",
+        "MIMode": "gdb",
+        "miDebuggerPath": "gdb.exe",
+        "program": "${workspaceFolder}/out/test.exe"
+      },
+      "preLaunchTask": "test-build"
+    },
   ]
 }

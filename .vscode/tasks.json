@@ -1,3 +1,4 @@
+//!终端命令设置
 {
     "version": "2.0.0",
     "tasks": [
@@ -83,6 +84,61 @@
                 ]
             },
             "problemMatcher": []
-        }
+        },
+        {
+            "label": "test-build",
+            "type": "shell",
+            "windows": {
+                "command": "powershell",
+                "args": [
+                    "g++",
+                    "-g",
+                    "${workspaceFolder}/test/src/${fileBasename}",
+                    "-I",
+                    "${workspaceFolder}/test/include",
+                    "-o",
+                    "${workspaceFolder}/out/${fileBasenameNoExtension}.exe"
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "g++",
+                    "-g",
+                    "${workspaceFolder}/test/src/${fileBasename}",
+                    "-I",
+                    "${workspaceFolder}/test/include",
+                    "-o",
+                    "${workspaceFolder}/out/${fileBasenameNoExtension}"
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "g++",
+                    "-g",
+                    "${workspaceFolder}/test/src/${fileBasename}",
+                    "-I",
+                    "${workspaceFolder}/test/include",
+                    "-o",
+                    "${workspaceFolder}/out/${fileBasenameNoExtension}"
+                ]
+            },
+            "problemMatcher": []
+        },
+        // {
+        //     "label": "test-clean",
+        //     "type": "shell",
+        //     "windows": {
+        //         "command": "powershell",
+        //         "args": [
+        //             "del",
+        //             "/q",
+        //             "/f",
+        //             "${workspaceFolder}/out/${fileBasenameNoExtension}.exe"
+        //         ]
+        //     },
+        //     "problemMatcher": []
+        // },
     ]
 }
