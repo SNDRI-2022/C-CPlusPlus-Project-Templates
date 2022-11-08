@@ -20,8 +20,8 @@
   "code-runner.customCommand": "cd $workspaceRoot && del /q /f .\\out\\$fileNameWithoutExt.exe && echo Cleanup complete!",
   //自定义语言运行命令
   "code-runner.executorMap": {
-    "c": "cd $workspaceRoot && gcc -g $fullFileName: -I .\\include -I .\\test\\include -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
-    "cpp": "cd $workspaceRoot && g++ -g $fullFileName -I .\\include -I .\\test\\include -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
+    "c": "cd $workspaceRoot && gcc -g $fullFileName -I .\\include  -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
+    "cpp": "cd $workspaceRoot && g++ -g $fullFileName -I .\\include  -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
   },
   "files.associations": {
     "vector": "cpp",

@@ -93,9 +93,9 @@
                 "args": [
                     "g++",
                     "-g",
-                    "${workspaceFolder}/test/src/${fileBasename}",
+                    "${workspaceFolder}/test/${fileBasename}",
                     "-I",
-                    "${workspaceFolder}/test/include",
+                    "${workspaceFolder}/include",
                     "-o",
                     "${workspaceFolder}/out/${fileBasenameNoExtension}.exe"
                 ]
@@ -105,9 +105,9 @@
                 "args": [
                     "g++",
                     "-g",
-                    "${workspaceFolder}/test/src/${fileBasename}",
+                    "${workspaceFolder}/test/${fileBasename}",
                     "-I",
-                    "${workspaceFolder}/test/include",
+                    "${workspaceFolder}/include",
                     "-o",
                     "${workspaceFolder}/out/${fileBasenameNoExtension}"
                 ]
@@ -117,9 +117,9 @@
                 "args": [
                     "g++",
                     "-g",
-                    "${workspaceFolder}/test/src/${fileBasename}",
+                    "${workspaceFolder}/test/${fileBasename}",
                     "-I",
-                    "${workspaceFolder}/test/include",
+                    "${workspaceFolder}/include",
                     "-o",
                     "${workspaceFolder}/out/${fileBasenameNoExtension}"
                 ]
