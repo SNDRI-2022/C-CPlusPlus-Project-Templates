@@ -28,7 +28,35 @@ windows下vscode的编译连接和运行(需要mingw64)
     1.修改Code Runner插件配置
     2.修改launch文件配置
     3.修改tasks文件配置
+###### v2.2.0:
+    1.删除test文件夹中的src、lib、include文件夹
+    2.修改Code Runner插件配置
+    3.修改launch文件配置(修改test文件夹的调试)
+    4.修改tasks文件配置(修改编译test文件夹的终端命令)    
+
 [code-runner配置说明](#code-runner插件配置)
+
+## 目录结构
+
+```
+C-CPlusPlus-Project-Templates
+├─ .vscode
+│  ├─ launch.json
+│  ├─ settings.json
+│  └─ tasks.json
+├─ include
+│  └─ HeaderFile.hpp
+├─ lib
+├─ Makefile
+├─ out
+├─ README.md
+├─ src
+│  └─ main.cpp
+└─ test
+   └─ test.cpp
+
+```
+
 # vscode插件推荐
 ## 功能类
 - [一键编译运行多种语言](https://github.com/formulahendry/vscode-code-runner):[本项目配置文件](#code-runner插件配置)
@@ -52,7 +80,7 @@ windows下vscode的编译连接和运行(需要mingw64)
 ```
 // settings.json文件
 {
-  ////运行时自动保存全部文件
+    ////运行时自动保存全部文件
   ////"code-runner.saveAllFilesBeforeRun": true,
   //自动清除输出
   "code-runner.clearPreviousOutput": true,
@@ -64,8 +92,9 @@ windows下vscode的编译连接和运行(需要mingw64)
   "code-runner.customCommand": "cd $workspaceRoot && del /q /f .\\out\\$fileNameWithoutExt.exe && echo Cleanup complete!",
   //自定义语言运行命令
   "code-runner.executorMap": {
-    "c": "cd $workspaceRoot && gcc -g $fullFileName: -I .\\include -I .\\test\\include -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
-    "cpp": "cd $workspaceRoot && g++ -g $fullFileName -I .\\include -I .\\test\\include -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
+    "c": "cd $workspaceRoot && gcc -g $fullFileName -I .\\include  -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
+    "cpp": "cd $workspaceRoot && g++ -g $fullFileName -I .\\include  -o .\\out\\$fileNameWithoutExt.exe && .\\out\\$fileNameWithoutExt.exe",
   },
 }
 ```
+
