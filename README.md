@@ -1,3 +1,6 @@
+# 已弃用，
+随着学习广度和深度的增加会有更标准更规范的目录结构
+
 # 项目介绍
 学习和实践 c/c++的项目模板
 从[C/C++ Project Generator](https://github.com/danielpinto8zz6/c-cpp-project-generator#readme):从些插件生成c/c++项目目录中自定义自己功能
